@@ -174,76 +174,54 @@
 }
 
 /* starts discover section */
-.discover {
-    width: 100%;
-    min-height: 50dvh;
-    padding: 1rem 2rem;
+section{
+  padding: 1rem 10% 9% 8%;
 }
 
-.box-discover {
+  .box-discover {
+    margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    gap: 1rem;
-}
-
-.box-discover img {
-    width: 50%;
-    height: 30%;
-    border-radius: 8px;
-}
-
-.box-d1 .text {
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    gap: -20rem;
+  }
+  .box-discover img{
+    border-radius: 10px;
+    width: 95%;
+    height: 40%;
+  }
+  .box-d1 .text{
     display: flex;
     padding: 0.5rem;
-}
-
-.arrow {
+  }
+  .arrow{
     border: 1px solid rgb(202, 202, 202);
     border-radius: 6px;
     width: 3rem;
     font-size: 12pt;
-    margin-left: 4rem;
-    padding: 0.5rem;
+    margin-left: 8.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .arrow i{
+    padding-top: 1rem;
     padding-left: 1rem;
-}
+  }
 
-.box-d1 h6 {
-    font-size: 14pt;
-    padding: 3rem;
-}
-
-.box-d1 p {
+  .box-d1 h4 {
+    font-size: 15pt;
+  }
+  .d1t2{
+    display: inline-flex;
+    margin-top: 0.6rem;
+  }
+  .text p {
     font-size: 12pt;
     color: rgb(116, 116, 116);
-}
-
-.box-d2 h6 {
-    font-size: 14pt;
-}
-
-.box-d2 p {
-    font-size: 12pt;
-    color: rgb(116, 116, 116);
-}
-
-.box-d3 h6 {
-    font-size: 14pt;
-}
-
-.box-d3 p {
-    font-size: 12pt;
-    color: rgb(116, 116, 116);
-}
-
-.box-d4 h6 {
-    font-size: 14pt;
-}
-
-.box-d4 p {
-    font-size: 12pt;
-    color: rgb(116, 116, 116);
-}
-
+    margin-left: 0.5rem;
+  }
+  
+  /* ends discover section */
+  
 
 /* TUR */
 .smua {
