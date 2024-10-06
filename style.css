@@ -184,6 +184,7 @@
         padding: 1rem 2rem;
         position: relative;
 
+<<<<<<< HEAD
         &::after {
             content: '';
             position: absolute;
@@ -297,37 +298,57 @@
 }
 
 .box-d1 p {
+=======
+/* starts discover section */
+section{
+  padding: 1rem 10% 9% 8%;
+}
+
+  .box-discover {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    gap: -20rem;
+  }
+  .box-discover img{
+    border-radius: 10px;
+    width: 95%;
+    height: 40%;
+  }
+  .box-d1 .text{
+    display: flex;
+    padding: 0.5rem;
+  }
+  .arrow{
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 6px;
+    width: 3rem;
+    font-size: 12pt;
+    margin-left: 8.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .arrow i{
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .box-d1 h4 {
+    font-size: 15pt;
+  }
+  .d1t2{
+    display: inline-flex;
+    margin-top: 0.6rem;
+  }
+  .text p {
+>>>>>>> 67c31692385ca8e026b2739ba23368b31b3ec19f
     font-size: 12pt;
     color: rgb(116, 116, 116);
-}
-
-.box-d2 h6 {
-    font-size: 14pt;
-}
-
-.box-d2 p {
-    font-size: 12pt;
-    color: rgb(116, 116, 116);
-}
-
-.box-d3 h6 {
-    font-size: 14pt;
-}
-
-.box-d3 p {
-    font-size: 12pt;
-    color: rgb(116, 116, 116);
-}
-
-.box-d4 h6 {
-    font-size: 14pt;
-}
-
-.box-d4 p {
-    font-size: 12pt;
-    color: rgb(116, 116, 116);
-}
-
+    margin-left: 0.5rem;
+  }
+  
+  /* ends discover section */
+  
 
 /* TOUR */
 .smua {
