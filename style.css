@@ -184,7 +184,6 @@
         padding: 1rem 2rem;
         position: relative;
 
-<<<<<<< HEAD
         &::after {
             content: '';
             position: absolute;
@@ -297,19 +296,18 @@
     padding: 3rem;
 }
 
-.box-d1 p {
-=======
+.box-d1 p {}
 /* starts discover section */
-section{
-  padding: 1rem 10% 9% 8%;
-}
+    section{
+    padding: 1rem 10% 9% 8%;
+    }
 
-  .box-discover {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
-    gap: -20rem;
-  }
+    .box-discover {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+        gap: -20rem;
+    }
   .box-discover img{
     border-radius: 10px;
     width: 95%;
@@ -341,7 +339,6 @@ section{
     margin-top: 0.6rem;
   }
   .text p {
->>>>>>> 67c31692385ca8e026b2739ba23368b31b3ec19f
     font-size: 12pt;
     color: rgb(116, 116, 116);
     margin-left: 0.5rem;
