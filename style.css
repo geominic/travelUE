@@ -174,9 +174,11 @@
 
     }
 }
-.isiWeb{
+
+.isiWeb {
     background-color: #adadad;
     padding: 2rem 3rem;
+
     .discover {
         margin-bottom: 5rem;
         background-color: ghostwhite;
@@ -210,53 +212,53 @@
 
         .box-discover {
             display: flex;
-            gap: 1.5rem;
+            gap: 1rem;
             padding: 1rem 0;
             overflow-x: scroll;
 
-            hr{
-                border: 1.75px solid var(--black2);
+            hr {
+                border: 1px solid var(--black2);
                 border-radius: var(--border1);
+                opacity: 0;
+                transition: .4s ease-out;
             }
 
             .box {
-                background-color: rgb(244, 244, 251);
                 flex: 0 0 auto;
-                width: 18rem;
-                padding: .5rem 1rem;
-                box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+                width: 250px;
                 transition: 0.4s ease;
-    
+
                 &:hover {
-                    background-color: rgb(233, 233, 240);
                     transform: translateY(-0.5rem);
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
                     border-radius: var(--border2);
+                    
+                    hr:has(+ &) { /*GILA COK keren bisa gitu*/
+                        opacity: 1;
+                    }
                 }
-    
                 .text {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: .5rem;
-    
+
                     .info {
                         h3 {
                             color: var(--black1);
                             font-size: var(--fontB);
                         }
-    
+
                         p {
                             color: var(--black2);
                             font-size: var(--fontM);
-    
+
                             i {
                                 color: var(--black2);
                                 margin-right: 0.3rem;
                             }
                         }
                     }
-    
+
                     .arrow {
                         i {
                             color: var(--black1);
@@ -265,7 +267,7 @@
                             padding: .5rem 1rem;
                             font-size: var(--fontM);
                             transition: background-color 0.3s ease, color 0.3s ease;
-    
+
                             &:hover {
                                 background-color: var(--black1);
                                 color: #fff;
@@ -273,15 +275,15 @@
                         }
                     }
                 }
-    
+
                 img {
-                    width: 100%;
+                    width: 250px;
                     height: 6rem;
                     object-fit: cover;
                     border-radius: var(--border2);
                     transition: transform 0.4s ease;
-                    filter: grayscale(.3);
-    
+                    filter: grayscale(.2);
+
                     &:hover {
                         transform: scale(1.05);
                         filter: none;
@@ -291,33 +293,39 @@
         }
     }
 }
+/* 
 .box-d1 h6 {
     font-size: 14pt;
     padding: 3rem;
 }
 
-.box-d1 p {}
-/* starts discover section */
-    section{
-    padding: 1rem 10% 9% 8%;
-    }
+.box-d1 p {
+    font-size: 12pt;
+}
 
-    .box-discover {
-        margin-top: 2rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10px, auto));
-        gap: -20rem;
-    }
-  .box-discover img{
+section {
+    padding: 1rem 10% 9% 8%;
+}
+
+.box-discover {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    gap: -20rem;
+}
+
+.box-discover img {
     border-radius: 10px;
     width: 95%;
     height: 40%;
-  }
-  .box-d1 .text{
+}
+
+.box-d1 .text {
     display: flex;
     padding: 0.5rem;
-  }
-  .arrow{
+}
+
+.arrow {
     border: 1px solid rgb(202, 202, 202);
     border-radius: 6px;
     width: 3rem;
@@ -325,29 +333,28 @@
     margin-left: 8.5rem;
     cursor: pointer;
     text-decoration: none;
-  }
-  .arrow i{
+}
+
+.arrow i {
     padding-top: 1rem;
     padding-left: 1rem;
-  }
+}
 
-  .box-d1 h4 {
+.box-d1 h4 {
     font-size: 15pt;
-  }
-  .d1t2{
+}
+
+.d1t2 {
     display: inline-flex;
     margin-top: 0.6rem;
-  }
-  .text p {
+}
+
+.text p {
     font-size: 12pt;
     color: rgb(116, 116, 116);
     margin-left: 0.5rem;
-  }
-  
-  /* ends discover section */
-  
+}
 
-/* TOUR */
 .smua {
     width: 93%;
     height: auto;
@@ -476,4 +483,4 @@
 
 .grid-container .item6 img {
     float: right;
-}
+} */
