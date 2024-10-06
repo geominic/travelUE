@@ -12,6 +12,8 @@
     --fontS: 0.8rem;
     --white1: white;
     --white2: #cdcdcd;
+    --black1: black;
+    --black2: rgba(0, 0, 0, 0.75);
     --border1: 1rem;
     --border2: 0.5rem;
 }
@@ -172,41 +174,123 @@
 
     }
 }
+.isiWeb{
+    background-color: #adadad;
+    padding: 2rem 3rem;
+    .discover {
+        margin-bottom: 5rem;
+        background-color: ghostwhite;
+        width: 100%;
+        padding: 1rem 2rem;
+        position: relative;
 
-/* starts discover section */
-.discover {
-    width: 100%;
-    min-height: 50dvh;
-    padding: 1rem 2rem;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2rem;
+            z-index: 1;
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, ghostwhite 10%, transparent);
+        }
+
+        h2.dis-header {
+            color: var(--black1);
+            margin-bottom: 0.5rem;
+        }
+
+        p.dis-header {
+            color: var(--black2);
+            margin-bottom: 1.5rem;
+        }
+
+        .box-discover {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1rem 0;
+            overflow-x: scroll;
+
+            hr{
+                border: 1.75px solid var(--black2);
+                border-radius: var(--border1);
+            }
+
+            .box {
+                background-color: rgb(244, 244, 251);
+                flex: 0 0 auto;
+                width: 18rem;
+                padding: .5rem 1rem;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+                transition: 0.4s ease;
+    
+                &:hover {
+                    background-color: rgb(233, 233, 240);
+                    transform: translateY(-0.5rem);
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                    border-radius: var(--border2);
+                }
+    
+                .text {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: .5rem;
+    
+                    .info {
+                        h3 {
+                            color: var(--black1);
+                            font-size: var(--fontB);
+                        }
+    
+                        p {
+                            color: var(--black2);
+                            font-size: var(--fontM);
+    
+                            i {
+                                color: var(--black2);
+                                margin-right: 0.3rem;
+                            }
+                        }
+                    }
+    
+                    .arrow {
+                        i {
+                            color: var(--black1);
+                            border: 1px solid #e0e0e0;
+                            border-radius: var(--border2);
+                            padding: .5rem 1rem;
+                            font-size: var(--fontM);
+                            transition: background-color 0.3s ease, color 0.3s ease;
+    
+                            &:hover {
+                                background-color: var(--black1);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+    
+                img {
+                    width: 100%;
+                    height: 6rem;
+                    object-fit: cover;
+                    border-radius: var(--border2);
+                    transition: transform 0.4s ease;
+                    filter: grayscale(.3);
+    
+                    &:hover {
+                        transform: scale(1.05);
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
 }
-
-.box-discover {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    gap: 1rem;
-}
-
-.box-discover img {
-    width: 50%;
-    height: 30%;
-    border-radius: 8px;
-}
-
-.box-d1 .text {
-    display: flex;
-    padding: 0.5rem;
-}
-
-.arrow {
-    border: 1px solid rgb(202, 202, 202);
-    border-radius: 6px;
-    width: 3rem;
-    font-size: 12pt;
-    margin-left: 4rem;
-    padding: 0.5rem;
-    padding-left: 1rem;
-}
-
 .box-d1 h6 {
     font-size: 14pt;
     padding: 3rem;
@@ -245,13 +329,14 @@
 }
 
 
-/* TUR */
+/* TOUR */
 .smua {
     width: 93%;
     height: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 3vw;
     margin: 0;
+    background-color: red;
 }
 
 .smua p {
