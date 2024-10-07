@@ -176,29 +176,14 @@
 }
 
 .isiWeb {
-    background-color: #adadad;
+    background-color: rgb(217, 217, 223);
     padding: 2rem 3rem;
 
     .discover {
         margin-bottom: 5rem;
-        background-color: ghostwhite;
         width: 100%;
         padding: 1rem 2rem;
         position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 2rem;
-            z-index: 1;
-        }
-
-        &::after {
-            right: 0;
-            background: linear-gradient(to left, ghostwhite 10%, transparent);
-        }
 
         h2.dis-header {
             color: var(--black1);
@@ -214,7 +199,7 @@
             display: flex;
             gap: 1rem;
             padding: 1rem 0;
-            overflow-x: scroll;
+            width: 100%;
 
             hr {
                 border: 1px solid var(--black2);
@@ -224,13 +209,13 @@
             }
 
             .box {
+                background-color: #ffffff4e;
                 flex: 0 0 auto;
                 width: 250px;
+                border-radius: var(--border2);
                 transition: 0.4s ease;
-
                 &:hover {
                     transform: translateY(-0.5rem);
-                    border-radius: var(--border2);
                     
                     hr:has(+ &) { /*GILA COK keren bisa gitu*/
                         opacity: 1;
@@ -240,8 +225,11 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: .5rem;
-
+                    margin: .5rem 0 .5rem .5rem;
+                    transition: .4s ease;
+                    &:hover{
+                        padding: 0 .5rem;
+                    }
                     .info {
                         h3 {
                             color: var(--black1);
@@ -293,96 +281,45 @@
         }
     }
 }
-/* 
-.box-d1 h6 {
-    font-size: 14pt;
-    padding: 3rem;
-}
-
-.box-d1 p {
-    font-size: 12pt;
-}
-
-section {
-    padding: 1rem 10% 9% 8%;
-}
-
-.box-discover {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
-    gap: -20rem;
-}
-
-.box-discover img {
-    border-radius: 10px;
-    width: 95%;
-    height: 40%;
-}
-
-.box-d1 .text {
-    display: flex;
-    padding: 0.5rem;
-}
-
-.arrow {
-    border: 1px solid rgb(202, 202, 202);
-    border-radius: 6px;
-    width: 3rem;
-    font-size: 12pt;
-    margin-left: 8.5rem;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.arrow i {
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-
-.box-d1 h4 {
-    font-size: 15pt;
-}
-
-.d1t2 {
-    display: inline-flex;
-    margin-top: 0.6rem;
-}
-
-.text p {
-    font-size: 12pt;
-    color: rgb(116, 116, 116);
-    margin-left: 0.5rem;
-}
-
 .smua {
-    width: 93%;
-    height: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 3vw;
-    margin: 0;
-    background-color: red;
+    width: 100%;
+    padding: 1rem 2rem;
+    .tur{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .header{
+            p{
+                font-size: var(--fontB);
+                color: var(--black2);
+            }
+            h1{
+                font-size: var(--fontXL);
+            }
+        }
+        .desc{
+            width: 30%;
+            margin-bottom: .5rem;   
+            text-align: justify;
+            p{
+                font-size: var(--fontM);
+                color: var(--black2);
+            }
+        }
+    }
 }
-
-.smua p {
-    color: rgb(110, 110, 110);
+.grid-container {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1rem;
+    row-gap: 0rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        'header header menu'
+        'main right right'
+        'footer footer kaki'
+    ;
 }
-
-.des {
-    float: right;
-    margin-top: -7vw;
-    font-size: 1.5vw;
-}
-
-.jdlaja h1 {
-    font-size: 4vw;
-    margin-top: -1vw;
-}
-
-.jdlaja p {
-    font-size: 2vw;
-}
-
 .item1 {
     grid-area: header;
 }
@@ -429,47 +366,19 @@ section {
     top: -6.5vw;
 }
 
-.grid-container {
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-        'header header header header menu menu'
-        'main main main main main right'
-        'footer footer kaki kaki kaki kaki';
-}
 
-.grid-container .item1 img {
-    width: 100%;
-}
-
-.grid-container .item2 img {
-    width: 100%;
-}
-
-.grid-container .item3 img {
-    width: 100%;
-}
-
-.grid-container .item5 img {
-    width: 100%;
-}
-
-.grid-container .item4 img {
-    width: 100%;
-}
-
-.grid-container .item6 img {
+.grid-container .item img {
     width: 100%;
 }
 
 .grid-container img {
     height: 50vh;
-    border-radius: 1cm;
+    border-radius: var(--border1);
     width: auto;
+    margin-top: -1rem;
 }
 
 .grid-container>div {
-    margin: -10px 0;
     font-size: 30px;
 }
 
@@ -483,4 +392,4 @@ section {
 
 .grid-container .item6 img {
     float: right;
-} */
+}
