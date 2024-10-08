@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>BerGearack</title>
+    <title>WonderWiz</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/8d96be3df1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,39 +15,39 @@
     <!-- starts landing -->
     <div class="landing">
         <!-- starts navbar -->
-          <div class="navbar">
-            <div class="group">
-                  <div class="logo">
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <a href="" target="_self">
                     <img src="" alt="" />
                     <h1>WonderWiz</h1>
-                      </div>
-                  <div class="nav">
-                    <a href="#home">Home</a>
-                    <a href="#Discover">Discover</a>
-                    <a href="#tours">Tours</a>
-                    <a href="#destinations">Destinations</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                </a>
             </div>
-            <div class="search">
-                <form action="">
-                    <input type="text"/>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
+            <div class="nav" id="nav">
+                <a href="#">Home</a>
+                <a href="#Discover">Discover</a>
+                <a href="#Tours">Tour Destinations</a>
+                <a href="#News">News</a>
+                <a href="#About">About Us</a>
             </div>
-            <div class="login">
-                <button class="b1">Log In</button>
-                <button class="b2">Sign Up</button>
-            </div>
+            <i class="fa-solid fa-bars" id="menu_toggle"></i>
         </div>
+        <script>
+            const navbar = document.getElementById('navbar')
+            const nav = document.getElementById('nav')
+            const menuToggle = document.getElementById('menu_toggle')
+            const menuClose = () => {
+                navbar.classList.toggle('closeNavbar')
+                nav.classList.toggle('closeNav')
+            }
+            menuToggle.addEventListener('click', menuClose)
+        </script>
         <!-- ends navbar-->
 
         <!-- starts home page -->
         <div class="hero-page">
-            <h1>WHERE YOU WANT TO BE<br />IS WHERE WE BRING YOU</h1>
-            <p>Explore breathtaking destinations around the globe, from serene beaches to bustling cities. Whether you crave adventure or relaxation, we tailor unforgettable travel experiences that captivate your spirit. Discover hidden gems, indulge in local cuisines, and immerse yourself in diverse cultures. Let us guide you to your dream getaway and create memories that last a lifetime!</p>
-            <button><a href="">Travel Now</a></button>
+            <h1>Impikan <b>Petualangan Anda</b><br/><b class="b2">Kami Realisasikan</b> Surga Itu</h1>
+            <p>Impikan sebuah petualangan yang tak terlupakan, dan biarkan kami mewujudkannya untuk Anda! Temukan pesona pulau-pulau eksotis yang tersebar dari Sabang hingga Merauke yang menanti untuk dijelajahi. Bergabunglah dalam perjalanan yang menakjubkan ini, setiap langkah Anda akan menjadi cerita baru yang penuh warna. Mari kita ciptakan kenangan indah di Indonesia, Surga di tengah samudera!</p>
+            <button><a href="">Jelajahi Sekarang</a></button>
         </div>
         <!-- ends home page -->
     </div>
@@ -56,17 +56,17 @@
     <!-- *** start Page Fillers *** -->
     <div class="isiWeb">
         <div class="discover" id="Discover">
-            <h2 class="dis-header">Discover your destination</h2>
-            <p class="dis-header">explore our range of proply types blala</p>
+            <h2 class="dis-header">Cari Tujuan Destinasi Anda</h2>
+            <p class="dis-header">Jelajahi berbagai pilihan yang memikat dan rencanakan petualangan tak terlupakan.</p>
             <div class="box-discover">
                 <div class="box">
                     <div class="text">
                         <div class="info">
                             <h3>Villas</h3>
-                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 available</p>
+                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 tersedia</p>
                         </div>
                         <div class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <img src="gambartur/danautoba.png"/>
@@ -76,10 +76,10 @@
                     <div class="text">
                         <div class="info">
                             <h3>Apartments</h3>
-                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 available</p>
+                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 tersedia</p>
                         </div>
                         <div class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <img src="gambartur/danautoba.png"/>
@@ -89,10 +89,10 @@
                     <div class="text">
                         <div class="info">
                             <h3>Resorts</h3>
-                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 available</p>
+                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 tersedia</p>
                         </div>
                         <div class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <img src="gambartur/danautoba.png"/>
@@ -102,10 +102,10 @@
                     <div class="text">
                         <div class="info">
                             <h3>Cottages</h3>
-                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 available</p>
+                            <p><i class="fa fa-home" aria-hidden="true"></i> 12.890 tersedia</p>
                         </div>
                         <div class="arrow">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href=""><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <img src="gambartur/danautoba.png"/>
@@ -115,26 +115,181 @@
         <!-- End Discover -->
         <!-- Start Tours -->
         <div class="tours" id="Tours">
-            <div class="smua">
-                <div class="tur">
-                    <div class="header">
-                        <p>Best Location</p>
-                        <h1>Indonesian Tourism</h1>
+            <div class="tour">
+                <div class="header">
+                    <p>Pariwisata Indonesia</p>
+                    <h1>Destinasi Wisata Terkenal</h1>
+                </div>
+                <div class="desc">
+                    <p>Indonesia adalah rumah bagi tempat-tempat luar biasa dengan keindahan alam yang menakjubkan, nikmati budaya yang kaya, dan rasakan keramahan penduduk lokal.</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="row">
+                    <div class="item">
+                        <img src="gambartur/danautoba.png" alt="Danau Toba">
+                        <div class="text">
+                            <p>Danau Toba, Sumatera</p>
+                            <h1>Tur Danau Toba</h1>
+                            <div class="spec">
+                                <b><p>7 Desember 2025</p></b>
+                                <div class="place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Sumatera Utara</p>
+                                </div>
+                                <p>Mulai dari</p>
+                                <p class="price">Rp. 22.560.000</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="desc">
-                        <p>Indonesia the home of extraordinary places with natural beauty, enjoy the rich culture, <br> and experience the friendliness of the local people.</p>
+                    <div class="item">
+                        <img src="gambartur/danautoba.png" alt="Danau Toba">
+                        <div class="text">
+                            <p>Danau Toba, Sumatera</p>
+                            <h1>Tur Danau Toba</h1>
+                            <div class="spec">
+                                <b><p>7 Desember 2025</p></b>
+                                <div class="place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Sumatera Utara</p>
+                                </div>
+                                <p>Mulai dari</p>
+                                <p class="price">Rp. 22.560.000</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="grid-container">
-                    <div class="item1 item"><img src="gambartur/danautoba.png" alt=""><div class="b"><p>Lake Toba, North Sumatra</p><h1>Lake Toba Tour</h1></div></div>
-                    <div class="item2 item"><img src="gambartur/gunungbromo.png" alt=""><div class="a"><p>Mount Bromo, East Java</p><h1>Mount Bromo Tour</h1></div></div>
-                    <div class="item3 item"><img src="gambartur/komodo.png" alt=""><div class="b"><p>Komodo Island, East Nusa Tenggara</p><h1>Komodo National Park Tour</h1></div></div>
-                    <div class="item4 item"><img src="gambartur/kawahijen.png" alt=""><div class="a"><p>Blue Flames, Ijen, East Java</p><h1>Ijen Crater Tour</h1></div></div>  
-                    <div class="item5 item"><img src="gambartur/pantaikuta.png" alt=""><div class="b"><p>Kuta Beach, Bali</p><h1>Kuta Beach Tour</h1></div></div>
-                    <div class="item6 item"><img src="gambartur/rajaampat.png" alt=""><div class="a"><p>Raja Ampat Islands, Papua</p><h1>Raja Ampat Tour</h1></div></div>
+                <div class="row">
+                    <div class="item">
+                        <img src="gambartur/danautoba.png" alt="Danau Toba">
+                        <div class="text">
+                            <p>Danau Toba, Sumatera</p>
+                            <h1>Tur Danau Toba</h1>
+                            <div class="spec">
+                                <b><p>7 Desember 2025</p></b>
+                                <div class="place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Sumatera Utara</p>
+                                </div>
+                                <p>Mulai dari</p>
+                                <p class="price">Rp. 22.560.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="gambartur/danautoba.png" alt="Danau Toba">
+                        <div class="text">
+                            <p>Danau Toba, Sumatera</p>
+                            <h1>Tur Danau Toba</h1>
+                            <div class="spec">
+                                <b><p>7 Desember 2025</p></b>
+                                <div class="place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Sumatera Utara</p>
+                                </div>
+                                <p>Mulai dari</p>
+                                <p class="price">Rp. 22.560.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <img src="gambartur/danautoba.png" alt="Danau Toba">
+                        <div class="text">
+                            <p>Danau Toba, Sumatera</p>
+                            <h1>Tur Danau Toba</h1>
+                            <div class="spec">
+                                <b><p>7 Desember 2025</p></b>
+                                <div class="place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Sumatera Utara</p>
+                                </div>
+                                <p>Mulai dari</p>
+                                <p class="price">Rp. 22.560.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="gambartur/danautoba.png" alt="Danau Toba">
+                        <div class="text">
+                            <p>Danau Toba, Sumatera</p>
+                            <h1>Tur Danau Toba</h1>
+                            <div class="spec">
+                                <b><p>7 Desember 2025</p></b>
+                                <div class="place">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Sumatera Utara</p>
+                                </div>
+                                <p>Mulai dari</p>
+                                <p class="price">Rp. 22.560.000</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- End Tours -->
+        <!-- Start News -->
+         <div class="news" id="News">
+            <div class="news-header">
+                <h2>Latest News</h2>
+                <p>Stay updated with the latest travel trends and destination highlights</p>
+            </div>
+            <div class="news-container">
+                <div class="news-item">
+                    <img src="news1.jpg" alt="News 1">
+                    <div class="news-content">
+                        <h3>New Eco-Resort Opens in Bali</h3>
+                        <p class="news-date">May 15, 2023</p>
+                        <p class="news-excerpt">Experience luxury with a sustainable twist at Bali's newest eco-friendly resort...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="news2.jpg" alt="News 2">
+                    <div class="news-content">
+                        <h3>Top 5 Hidden Gems in Java</h3>
+                        <p class="news-date">May 10, 2023</p>
+                        <p class="news-excerpt">Discover these lesser-known but breathtaking locations across Java...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="news3.jpg" alt="News 3">
+                    <div class="news-content">
+                        <h3>Indonesia Reopens Popular Dive Sites</h3>
+                        <p class="news-date">May 5, 2023</p>
+                        <p class="news-excerpt">After extensive conservation efforts, these world-renowned dive spots are welcoming visitors again...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- End News -->
+         <!-- Start about & contact -->
+         <div class="about" id="About">
+            <div class="container">
+                <div class="box"><i class="fa fa-map-marker" aria-hidden="true"></i><h3>Our Main Office</h3><h5> Jl. Gereja Theresia No. 4 <br> Rt./Rw. 008/004, Jakarta Pusat</h5></div>
+                <div class="box"><i class="fa fa-phone" aria-hidden="true"></i><h3>Phone Number</h3><h5>+62 896-8145-2564 (Matthew)</h5></div>
+                <div class="box"><i class="fa fa-fax" aria-hidden="true"></i><h3>Fax</h3><h5>1-234-567-8900</h5></div>
+                <div class="box"><i class="fa fa-envelope" aria-hidden="true"></i><h3>Email</h3><h5>hello@gmail.com</h5></div>
+            </div>
+            <div class="contain">
+                <div class="e">
+                    <br>
+                    <hr>
+                    <p class="header">We believe that travel<br>is more than just a journey</p>
+                    <hr><br>
+                    <p>
+                        Di WonderWiz, kami berfokus pada menghubungkan orang dan menciptakan pengalaman berkesan.<br><br>Misi kami adalah memfasilitasi eksplorasi dunia dengan efisien melalui berbagai paket perjalanan, dari domestik hingga internasional. Dengan dukungan mitra luas, kami menawarkan penawaran dan pengalaman berkualitas, menjadikan kami mitra perjalanan terpercaya yang siap memenuhi kebutuhan Anda.
+                    </p>
+                </div>
+                <div class="f">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5613115439514!2d106.8233753736995!3d-6.189409060638131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f425b1901f1b%3A0x388a40e23a697d41!2sSMK%20Katolik%20Santa%20Theresia%20Jakarta!5e0!3m2!1sid!2sid!4v1728308007066!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+         </div>
     </div>
 </body>
 </html>
