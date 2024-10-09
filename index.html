@@ -12,6 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">   
   </head>
   <body>
+    <div class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+        </div>
+        <p>Loading...</p>
+    </div>
     <!-- starts landing -->
     <div class="landing">
         <!-- starts navbar -->
@@ -335,4 +341,10 @@
       <p>© 2024 All Rights Reserved. Design by WanderWiz</p>
     </div>
 </body>
+<script>
+    window.addEventListener('load', function() {
+    const loadingScreen = document.querySelector('.loading-screen');
+    loadingScreen.style.display = 'none';
+    });
+</script>
 </html>
