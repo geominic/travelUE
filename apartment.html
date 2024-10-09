@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderWiz's apartments</title>
+    <link rel="stylesheet" href="resort.css" />
+    <script
+      src="https://kit.fontawesome.com/f80ebe0ec4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <!-- starts landing -->
+    <div class="landing">
+      <!-- starts navbar -->
+      <div class="navbar" id="navbar">
+        <div class="logo">
+            <a href="index.html" target="_self">
+                <img src="logo.jpg" alt="" />
+                <h1>WonderWiz</h1>
+            </a>
+        </div>
+        <div class="nav" id="nav">
+          <a href="index.html#">Back to Home</a>
+          <a href="index.html#Discover">Discover</a>
+          <a href="index.html#Tours">Tour Destinations</a>
+          <a href="index.html#News">News</a>
+          <a href="index.html#About">About Us</a>
+        </div>
+        <i class="fa-solid fa-bars" id="menu_toggle"></i>
+      </div>
+      <script>
+        const navbar = document.getElementById("navbar");
+        const nav = document.getElementById("nav");
+        const menuToggle = document.getElementById("menu_toggle");
+        const menuClose = () => {
+          navbar.classList.toggle("closeNavbar");
+          nav.classList.toggle("closeNav");
+        };
+        menuToggle.addEventListener("click", menuClose);
+      </script>
+      <!-- ends navbar-->
+
+      <!-- image slider -->
+      <div class="gap"></div>
+      <div class="slider">
+        <div class="bg"></div>
+      </div>
+    </div>
+    <!-- ends landing -->
+    <!-- starts discover apartment-->
+    <div class="discover-resort">
+        <h2 class="dis-dul">Pilih Apartment Favoritmu!</h2>
+        <div class="box-dis">
+          <div class="box-1">
+              <img src="imgApart/apartment-1.jpg" />
+              <h4 class="judul">Homey Studio Apartment</h4>
+              <div class="semua">
+                  <div class="all-text-box">
+                      <div class="text-box">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>Mataram, Yogyakarta</p>
+                      </div>
+                      <br />
+                      <div class="star-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <div class="text-box-2">
+                      <p>Mulai dari</p>
+                      <h4>Rp 1.200.000,00</h4>
+                      <p>1 malam, 2 dewasa</p>
+                  </div>
+              </div>
+              <div class="text-info">
+                  <p>
+                  Homey Studio Apartment menawarkan akomodasi nyaman dan terjangkau 
+                  untuk menginap lama, lengkap dengan kolam renang dan pusat 
+                  kebugaran. Tersedia juga restoran dengan menu lezat.
+                  </p>
+              </div>
+              <div class="box-button">
+                  <button class="butt">Book Now</button>
+              </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgApart/apartment-2.jpg" />
+          <h4 class="judul">The Apartments Ubud</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Ubud, Bali</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 1.800.000,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+              The Apartments Ubud menawarkan akomodasi dengan Wi-Fi gratis, 
+              berjarak 2 km dari Museum Blanco Renaissance dan 3 km dari Pasar Ubud. 
+              Fasilitasnya mencakup dapur lengkap, kolam renang terbuka, dan teras.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+              <img src="imgApart/apartment-3.jpg" />
+              <h4 class="judul">Beachwalk Residence</h4>
+              <div class="semua">
+                  <div class="all-text-box">
+                      <div class="text-box">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>Kuta, Bali</p>
+                      </div>
+                      <br />
+                      <div class="star-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <div class="text-box-2">
+                      <p>Mulai dari</p>
+                      <h4>Rp 3.800.000,00</h4>
+                      <p>1 malam, 2 dewasa</p>
+                  </div>
+              </div>
+              <div class="text-info">
+                  <p>
+                  Beachwalk Residence menawarkan akomodasi mewah dengan kolam renang, 
+                  pusat kebugaran, dan WiFi gratis, ideal untuk keluarga atau menginap lama. 
+                  Lokasinya dekat tempat perbelanjaan dan pelayanan berkualitas.
+                  </p>
+              </div>
+
+              <div class="box-button">
+                  <button class="butt">Book Now</button>
+              </div>
+          </div>
+
+          <div class="box-1">
+              <img src="imgApart/apartment-4.jpg" />
+              <h4 class="judul">Oakwood Apartments</h4>
+              <div class="semua">
+                  <div class="all-text-box">
+                      <div class="text-box">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>PIK, Jakarta</p>
+                      </div>
+                      <br />
+                      <div class="star-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <div class="text-box-2">
+                      <p>Mulai dari</p>
+                      <h4>Rp 1.999.000,00</h4>
+                      <p>1 malam, 2 dewasa</p>
+                  </div>
+              </div>
+              <div class="text-info">
+                  <p>
+                  Oakwood Apartments PIK Jakarta (Pantai Indah Kapuk) adalah pilihan 
+                  ideal untuk liburan romantis atau keluarga, dengan fasilitas mewah dan 
+                  lokasi dekat tempat perbelanjaan. Akomodasi ini juga nyaman untuk menginap lama.
+                  </p>
+              </div>
+
+              <div class="box-button">
+                  <button class="butt">Book Now</button>
+              </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgApart/apartment-5.jpg" />
+          <h4 class="judul">The Residences Casablanca</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Kuningan, Jakarta</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 699.999,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+              Apartemen mewah di pusat Kuningan menawarkan kenyamanan dengan akses 
+              mudah ke mal kelas atas Jakarta, seperti Kota Kasablanka dan Lotte Avenue. 
+              Fasilitasnya mencakup ruang tamu, kolam renang, serta aktivitas rekreasi.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgApart/apartment-6.jpg" />
+          <h4 class="judul">CLIO Apartment</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Puncak, Bogor</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 599.999,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+              Clio terletak di area tenang dekat Moka Café, dikelilingi galeri seni
+              seperti Kendra Gallery dan BIASA ArtSpace. Setiap kamar dilengkapi dengan AC, 
+              TV, dapur, minibar, serta fasilitas tambahan untuk pengalaman menginap yang nyaman.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgApart/apartment-7.jpg" />
+          <h4 class="judul">Ascott Jakarta</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Thamrin, Jakarta</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 1.900.000,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+
+              Penginapan bintang 5 di The Golden Triangle, menawarkan apartemen 
+              luas dengan fasilitas lengkap seperti kolam renang dan pusat 
+              kebugaran. Lokasinya dekat pusat bisnis dan perbelanjaan, 
+              ideal untuk perjalanan bisnis dan liburan keluarga.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgApart/apartment-8.jpg" />
+          <h4 class="judul">Prime Plaza Suites</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Sanur, Bali</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 3.700.000,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+              Prime Plaza Suite Sanur Bali menawarkan suite 2 kamar tidur yang luas 
+              dan fasilitas kolam renang, ideal untuk keluarga. Lokasinya yang strategis 
+              di By Pass Ngurah Rai memudahkan akses ke restoran dan Pantai Sanur yang
+              hanya 10 menit berkendara.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgApart/apartment-9.jpg" />
+          <h4 class="judul">Citadines</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Sudirman, Jakarta</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 1.299.999,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+              Citadines Sudirman Jakarta menawarkan akomodasi nyaman dengan 
+              fasilitas lengkap seperti kolam renang dan pusat kebugaran, ideal 
+              untuk pasangan dan keluarga. Pengalaman menginap Anda akan menyenangkan 
+              berkat pelayanan istimewa dan lokasi strategis.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+        </div>
+    </div>
+    <!-- end discover apartment-->
+    <div class="footer">
+        <div class="row-footer">
+            <div class="infoma">
+                <h3>Contact Us</h3>
+                <ul class="conta">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Jl. Gereja Theresia No. 4 <br>Rt./Rw. 008/004, Jakarta Pusat </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>Call +62 8976554329</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>WanderWiz@gmail.com</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="bot-nav">
+                <div class="infoma">
+                    <h3>Menu</h3>
+                    <ul class="fullink">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#Discover">Discover</a></li>
+                        <li><a href="#Tours">Tours</a></li>
+                        <li><a href="#News">News</a></li>
+                        <li><a href="#About">About</a></li>
+                    </ul>
+                </div>
+                <div class="infoma text_align_left">
+                    <ul class="social_icon">
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="infoma">
+                <h3>Newsletter</h3>
+                <div class="row-infoma">
+                    <input class="newsl" placeholder="Enter your email" type="text" name="Enter your email">
+                    <input type="submit" class="subsci_btn" value="Subscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p>© 2024 All Rights Reserved. Design by WanderWiz</p>
+    </div>
+</body>
+<style>
+    .slider {
+        position: relative;
+        width: 100%;
+        /* Set the width of your slider */
+        min-height: 50dvh;
+        padding: 0 15rem;
+        box-sizing: border-box;
+        animation: slider2 10s infinite forwards 5s;
+
+        .bg {
+            width: 100%;
+            /* Set the width of your slider */
+            aspect-ratio: 16/9;
+            background: url(imgResort/ner.png);
+            background-size: cover;
+            background-position: center;
+            animation: slider 10s infinite forwards 5s;
+        }
+    }
+	@keyframes slider {
+		0% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		10% {
+			background: url(imgResort/ner-2.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		50% {
+			background: url(imgResort/ner-2.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		90% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		100% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+	}
+
+	@keyframes slider2 {
+		0% {
+			background-color: white;
+		}
+
+		10% {
+			background-color: #261C19;
+		}
+
+		50% {
+			background-color: #261C19;
+		}
+
+		90% {
+			background-color: white;
+		}
+
+		100% {
+			background-color: white;
+		}
+	}
+</style>
+</html>

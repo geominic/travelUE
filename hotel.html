@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderWiz's hotels</title>
+    <link rel="stylesheet" href="resort.css" />
+    <script
+      src="https://kit.fontawesome.com/f80ebe0ec4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <!-- starts landing -->
+    <div class="landing">
+      <!-- starts navbar -->
+      <div class="navbar" id="navbar">
+        <div class="logo">
+            <a href="index.html" target="_self">
+                <img src="logo.jpg" alt="" />
+                <h1>WonderWiz</h1>
+            </a>
+        </div>
+        <div class="nav" id="nav">
+          <a href="index.html#">Back to Home</a>
+          <a href="index.html#Discover">Discover</a>
+          <a href="index.html#Tours">Tour Destinations</a>
+          <a href="index.html#News">News</a>
+          <a href="index.html#About">About Us</a>
+        </div>
+        <i class="fa-solid fa-bars" id="menu_toggle"></i>
+      </div>
+      <script>
+        const navbar = document.getElementById("navbar");
+        const nav = document.getElementById("nav");
+        const menuToggle = document.getElementById("menu_toggle");
+        const menuClose = () => {
+          navbar.classList.toggle("closeNavbar");
+          nav.classList.toggle("closeNav");
+        };
+        menuToggle.addEventListener("click", menuClose);
+      </script>
+      <!-- ends navbar-->
+
+      <!-- image slider -->
+      <div class="gap"></div>
+      <div class="slider">
+        <div class="bg"></div>
+      </div>
+    </div>
+    <!-- ends landing -->
+    <!-- starts discover apartment-->
+    <div class="discover-resort">
+        <h2 class="dis-dul">Pilih Hotel Favoritmu!</h2>
+        <div class="box-dis">
+          <div class="box-1">
+              <img src="imgHotel/hotel-1.jpg" />
+              <h4 class="judul">Adiwana Bisma</h4>
+              <div class="semua">
+                  <div class="all-text-box">
+                      <div class="text-box">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>Jl. Bisma, Ubud 80571 Indonesia</p>
+                      </div>
+                      <br />
+                      <div class="star-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <div class="text-box-2">
+                      <p>Mulai dari</p>
+                      <h4>Rp 4.700.000,00</h4>
+                      <p>1 malam, 2 dewasa</p>
+                  </div>
+              </div>
+              <div class="text-info">
+                  <p>
+                      Adiwana Bisma adalah resor mewah di Ubud yang menawarkan suasana tenang dan hangat. Terletak dekat Istana Ubud, resor ini memadukan elemen seni Bali dengan desain kontemporer.
+                  </p>
+              </div>
+              <div class="box-button">
+                  <button class="butt">Book Now</button>
+              </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgHotel/hotel-2.png" />
+          <h4 class="judul">Zasgo Hotel</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Jl. Soekarno Hatta, Labuan Bajo, Flores 86763 Indonesia</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 501.500,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+                  Zasgo Hotel adalah satu-satunya hotel di kota ini yang menawarkan kemudahan berbelanja dan akomodasi dalam satu gedung, serta dekat dengan berbagai pusat kegiatan.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+              <img src="imgHotel/hotel-3.png" />
+              <h4 class="judul">Andaz Bali</h4>
+              <div class="semua">
+                  <div class="all-text-box">
+                      <div class="text-box">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>Nongsa, Riau</p>
+                      </div>
+                      <br />
+                      <div class="star-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <div class="text-box-2">
+                      <p>Mulai dari</p>
+                      <h4>Rp 4.500.000,00</h4>
+                      <p>1 malam, 2 dewasa</p>
+                  </div>
+              </div>
+              <div class="text-info">
+                  <p>
+                      Andaz Bali terinspirasi oleh desa Bali kontemporer, mengajak tamu merasakan perpaduan tradisional dan modern. Resort ini terletak di jantung Sanur, terkenal dengan pesonanya dan pantai yang indah.
+                  </p>
+              </div>
+
+              <div class="box-button">
+                  <button class="butt">Book Now</button>
+              </div>
+          </div>
+
+          <div class="box-1">
+              <img src="imgHotel/hotel-4.jpg" />
+              <h4 class="judul">Hotel Santika Batam</h4>
+              <div class="semua">
+                  <div class="all-text-box">
+                      <div class="text-box">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>Jl. Engku Putri No.9, Tlk. Tering,, Batam Center, Riau Islands Province 29464 Indonesia</p>
+                      </div>
+                      <br />
+                      <div class="star-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                  <div class="text-box-2">
+                      <p>Mulai dari</p>
+                      <h4>Rp 700.000,00</h4>
+                      <p>1 malam, 2 dewasa</p>
+                  </div>
+              </div>
+              <div class="text-info">
+                  <p>
+                      Hotel Santika Batam terletak di pusat kota, dekat Bandara Hang Nadim, dengan akses mudah ke area bisnis dan hiburan. Pulau Rempang yang indah hanya kurang dari satu jam perjalanan. Hotel ini menawarkan keramahan Indonesia dengan tradisi lokal, memastikan pengalaman menginap yang hangat.
+                  </p>
+              </div>
+
+              <div class="box-button">
+                  <button class="butt">Book Now</button>
+              </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgHotel/hotel-5.jpg" />
+          <h4 class="judul">Adiwana Unagi Suites</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Jl. Suweta No 88, Ubud 80571 Indonesia</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 3.300.600,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+                  Adiwana Unagi Suites terletak di Ubud, menawarkan tempat tenang dengan akses mudah ke atraksi lokal. Suite yang luas mengusung desain kontemporer Bali dan menampilkan kerajinan tangan terbaik dari pengrajin setempat.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgHotel/hotel-6.jpg" />
+          <h4 class="judul">Adiwana Suweta</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Jl. Suweta, Ubud 80571 Indonesia</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 2.600.000,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+                  Adiwana Suweta adalah resor di Ubud yang menggabungkan keindahan alam dan budaya lokal, dengan suite luas serta vila kolam renang pribadi. Dikenal dengan layanan unggul dan keramahan Bali yang otentik, resor ini menawarkan pengalaman menginap yang tak terlupakan dekat dengan atraksi utama Ubud.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgHotel/hotel-7.jpg" />
+          <h4 class="judul">The Alantara Sanur</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Jl Tirta Ening, No. 12, Sanur, Denpasar 80228 Indonesia</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 4.500.000,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+                  Alantara Sanur dikenal karena kebersihannya dan kamar yang nyaman, meskipun ada beberapa masalah pemeliharaan. Tamu menghargai layanan antar-jemput yang baik, pilihan sarapan yang beragam, dan area kolam renang yang menenangkan, sementara lokasi yang tenang dianggap sebagai nilai plus meskipun agak terpencil.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgHotel/hotel-8.jpg" />
+          <h4 class="judul">Fourteen Roses Boutique Hotel</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Jalan Raya Legian No. 153, Kuta 80361 Indonesia</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 600.000,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+                  Fourteen Roses Hotel Legian adalah hotel legendaris di pusat Kuta, dekat Ground Zero dan hanya sepuluh menit berjalan kaki dari pantai Kuta. Hotel ini menawarkan dua konsep akomodasi, termasuk kamar deluxe modern dan kamar bergaya tradisional, dikelilingi oleh toko, bank, dan kehidupan malam yang terkenal.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+
+          <div class="box-1">
+          <img src="imgHotel/hotel-9.png" />
+          <h4 class="judul">Adiwana Svarga Loka</h4>
+          <div class="semua">
+              <div class="all-text-box">
+              <div class="text-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Jl. Raya Penestanan Kelod Sayan, Ubud 80571 Indonesia</p>
+              </div>
+              <br />
+              <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              </div>
+              <div class="text-box-2">
+              <p>Mulai dari</p>
+              <h4>Rp 1.400.000,00</h4>
+              <p>1 malam, 2 dewasa</p>
+              </div>
+          </div>
+          <div class="text-info">
+              <p>
+                  Adiwana Svarga Loka di Ubud, Bali, adalah tempat peristirahatan tenang yang terhubung dengan mitologi Bali. Terletak di pertemuan dua sungai, resor ini menawarkan pengalaman transformasi untuk mendekatkan diri dengan diri sendiri dalam suasana alami yang magis.
+              </p>
+          </div>
+
+          <div class="box-button">
+              <button class="butt">Book Now</button>
+          </div>
+          </div>
+        </div>
+    </div>
+    <!-- end discover apartment-->
+    <div class="footer">
+        <div class="row-footer">
+            <div class="infoma">
+                <h3>Contact Us</h3>
+                <ul class="conta">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Jl. Gereja Theresia No. 4 <br>Rt./Rw. 008/004, Jakarta Pusat </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>Call +62 8976554329</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>WanderWiz@gmail.com</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="bot-nav">
+                <div class="infoma">
+                    <h3>Menu</h3>
+                    <ul class="fullink">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#Discover">Discover</a></li>
+                        <li><a href="#Tours">Tours</a></li>
+                        <li><a href="#News">News</a></li>
+                        <li><a href="#About">About</a></li>
+                    </ul>
+                </div>
+                <div class="infoma text_align_left">
+                    <ul class="social_icon">
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="infoma">
+                <h3>Newsletter</h3>
+                <div class="row-infoma">
+                    <input class="newsl" placeholder="Enter your email" type="text" name="Enter your email">
+                    <input type="submit" class="subsci_btn" value="Subscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p>© 2024 All Rights Reserved. Design by WanderWiz</p>
+    </div>
+</body>
+<style>
+    .slider {
+        position: relative;
+        width: 100%;
+        /* Set the width of your slider */
+        min-height: 50dvh;
+        padding: 0 15rem;
+        box-sizing: border-box;
+        animation: slider2 10s infinite forwards 5s;
+
+        .bg {
+            width: 100%;
+            /* Set the width of your slider */
+            aspect-ratio: 16/9;
+            background: url(imgResort/ner.png);
+            background-size: cover;
+            background-position: center;
+            animation: slider 10s infinite forwards 5s;
+        }
+    }
+	@keyframes slider {
+		0% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		10% {
+			background: url(imgResort/ner-2.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		50% {
+			background: url(imgResort/ner-2.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		90% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		100% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+	}
+
+	@keyframes slider2 {
+		0% {
+			background-color: white;
+		}
+
+		10% {
+			background-color: #261C19;
+		}
+
+		50% {
+			background-color: #261C19;
+		}
+
+		90% {
+			background-color: white;
+		}
+
+		100% {
+			background-color: white;
+		}
+	}
+</style>
+</html>
