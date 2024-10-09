@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="resort.css" />
+    <script
+      src="https://kit.fontawesome.com/f80ebe0ec4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- starts landing -->
+    <div class="landing">
+      <!-- starts navbar -->
+      <div class="navbar" id="navbar">
+        <div class="logo">
+          <a href="index.html" target="_self">
+            <img src="" alt="" />
+            <h1>WonderWiz</h1>
+          </a>
+        </div>
+        <div class="nav" id="nav">
+          <a href="index.html#">Back to Home</a>
+          <a href="index.html#Discover">Discover</a>
+          <a href="index.html#Tours">Tour Destinations</a>
+          <a href="index.html#News">News</a>
+          <a href="index.html#About">About Us</a>
+        </div>
+        <i class="fa-solid fa-bars" id="menu_toggle"></i>
+      </div>
+      <script>
+        const navbar = document.getElementById("navbar");
+        const nav = document.getElementById("nav");
+        const menuToggle = document.getElementById("menu_toggle");
+        const menuClose = () => {
+          navbar.classList.toggle("closeNavbar");
+          nav.classList.toggle("closeNav");
+        };
+        menuToggle.addEventListener("click", menuClose);
+      </script>
+      <!-- ends navbar-->
+
+      <!-- image slider -->
+      <div class="gap"></div>
+      <div class="slider">
+        <div class="bg"></div>
+      </div>
+    </div>
+    <!-- ends landing -->
+    <div class="discover-resort">
+      	<h2 class="dis-dul">Pilih Resort Favoritmu!</h2>
+      	<div class="box-dis">
+			<div class="box-1">
+				<img src="imgResort/resort-3.jpg" />
+				<h4 class="judul">Ayuterra Resort</h4>
+				<div class="semua">
+					<div class="all-text-box">
+						<div class="text-box">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>Kedewatan, Ubud</p>
+						</div>
+						<br />
+						<div class="star-icon">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+					<div class="text-box-2">
+						<p>Mulai dari</p>
+						<h4>Rp 3.700.000,00</h4>
+						<p>1 malam, 2 dewasa</p>
+					</div>
+				</div>
+				<div class="text-info">
+					<p>
+					Ayuterra Resort terletak di Ubud, 3,3 km dari Pasar Ubud dan Puri
+					Ubud. Dengan kolam renang pribadi di setiap unitnya, resor ini
+					menawarkan pemandangan Sungai Ayung, gunung dan tanaman hijau di
+					sekitarnya.
+					</p>
+				</div>
+				<div class="box-button">
+					<button class="butt">Book Now</button>
+				</div>
+			</div>
+
+			<div class="box-1">
+			<img src="imgResort/resort-2.jpg" />
+			<h4 class="judul">Mulia Resort</h4>
+			<div class="semua">
+				<div class="all-text-box">
+				<div class="text-box">
+					<i class="fa-solid fa-location-dot"></i>
+					<p>Nusa Dua, Benoa</p>
+				</div>
+				<br />
+				<div class="star-icon">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+				</div>
+				<div class="text-box-2">
+				<p>Mulai dari</p>
+				<h4>Rp 3.100.000,00</h4>
+				<p>1 malam, 2 dewasa</p>
+				</div>
+			</div>
+			<div class="text-info">
+				<p>
+				Mulia Resort merupakan pilihan yang tepat ketika mengunjungi Nusa
+				Dua. Properti ini menawarkan suasana yang romantis dengan
+				fasilitas yang di desain untuk wisatawan seperti Anda.
+				</p>
+			</div>
+
+			<div class="box-button">
+				<button class="butt">Book Now</button>
+			</div>
+			</div>
+
+			<div class="box-1">
+				<img src="imgResort/resort-1.jpg" />
+				<h4 class="judul">Montigo Resorts Nongsa</h4>
+				<div class="semua">
+					<div class="all-text-box">
+						<div class="text-box">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>Nongsa, Riau</p>
+						</div>
+						<br />
+						<div class="star-icon">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+					<div class="text-box-2">
+						<p>Mulai dari</p>
+						<h4>Rp 2.700.000,00</h4>
+						<p>1 malam, 2 dewasa</p>
+					</div>
+				</div>
+				<div class="text-info">
+					<p>
+					Montigo Resorts Nongsa adalah resor keluarga di Nongsa yang
+					menawarkan kamar dengan fasilitas lengkap, termasuk wi-fi gratis.
+					Resor ini menyediakan layanan concierge, kolam renang, dan
+					sarapan.
+					</p>
+				</div>
+
+				<div class="box-button">
+					<button class="butt">Book Now</button>
+				</div>
+			</div>
+
+			<div class="box-1">
+				<img src="imgResort/resort-4.jpg" />
+				<h4 class="judul">Telunas Resort</h4>
+				<div class="semua">
+					<div class="all-text-box">
+						<div class="text-box">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>Pulau Sugi, Riau</p>
+						</div>
+						<br />
+						<div class="star-icon">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+					<div class="text-box-2">
+						<p>Mulai dari</p>
+						<h4>Rp 1.999.000,00</h4>
+						<p>1 malam, 2 dewasa</p>
+					</div>
+				</div>
+				<div class="text-info">
+					<p>
+					Telunas Private Island, terletak dekat Pulau Batam, menawarkan
+					privasi dan kemewahan sederhana. Ini adalah alternatif sempurna
+					bagi mereka yang ingin bersantai dan melepaskan diri dari
+					rutinitas.
+					</p>
+				</div>
+
+				<div class="box-button">
+					<button class="butt">Book Now</button>
+				</div>
+			</div>
+
+			<div class="box-1">
+			<img src="imgResort/resort-5.jpg" />
+			<h4 class="judul">Misool Eco Resort</h4>
+			<div class="semua">
+				<div class="all-text-box">
+				<div class="text-box">
+					<i class="fa-solid fa-location-dot"></i>
+					<p>Raja Ampat, Papua</p>
+				</div>
+				<br />
+				<div class="star-icon">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+				</div>
+				<div class="text-box-2">
+				<p>Mulai dari</p>
+				<h4>Rp 9.700.000,00</h4>
+				<p>1 malam, 2 dewasa</p>
+				</div>
+			</div>
+			<div class="text-info">
+				<p>
+				Tempat peristirahatan tropis yang tenang di pulau pribadi. Resor
+				ini bebas dari polusi cahaya, kebisingan, dan sinyal ponsel,
+				memungkinkan Anda fokus menikmati keindahan alam sekitar.
+				</p>
+			</div>
+
+			<div class="box-button">
+				<button class="butt">Book Now</button>
+			</div>
+			</div>
+
+			<div class="box-1">
+			<img src="imgResort/resort-6.jpg" />
+			<h4 class="judul">Royal Safari Garden Resort</h4>
+			<div class="semua">
+				<div class="all-text-box">
+				<div class="text-box">
+					<i class="fa-solid fa-location-dot"></i>
+					<p>Puncak, Bogor</p>
+				</div>
+				<br />
+				<div class="star-icon">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+				</div>
+				<div class="text-box-2">
+				<p>Mulai dari</p>
+				<h4>Rp 2.400.000,00</h4>
+				<p>1 malam, 2 dewasa</p>
+				</div>
+			</div>
+			<div class="text-info">
+				<p>
+				Royal Safari Garden Resort & Convention menawarkan kamar dengan
+				fasilitas lengkap dan wi-fi gratis. Hotel ini menyediakan kolam
+				renang, layanan concierge, dan parkir gratis, serta dekat dengan
+				atraksi.
+				</p>
+			</div>
+
+			<div class="box-button">
+				<button class="butt">Book Now</button>
+			</div>
+			</div>
+
+			<div class="box-1">
+			<img src="imgResort/resort-7.jpg" />
+			<h4 class="judul">Club Med Bali</h4>
+			<div class="semua">
+				<div class="all-text-box">
+				<div class="text-box">
+					<i class="fa-solid fa-location-dot"></i>
+					<p>Nusa Dua, Benoa</p>
+				</div>
+				<br />
+				<div class="star-icon">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+				</div>
+				<div class="text-box-2">
+				<p>Mulai dari</p>
+				<h4>Rp 2.900.000,00</h4>
+				<p>1 malam, 2 dewasa</p>
+				</div>
+			</div>
+			<div class="text-info">
+				<p>
+				Club Med Bali di Nusa Dua adalah pilihan ideal bagi keluarga,
+				menawarkan kombinasi harga, kenyamanan, dan kepraktisan.
+				Fasilitasnya dirancang khusus untuk memenuhi kebutuhan wisatawan.
+				</p>
+			</div>
+
+			<div class="box-button">
+				<button class="butt">Book Now</button>
+			</div>
+			</div>
+
+			<div class="box-1">
+			<img src="imgResort/resort-8.jpg" />
+			<h4 class="judul">Amanjiwo</h4>
+			<div class="semua">
+				<div class="all-text-box">
+				<div class="text-box">
+					<i class="fa-solid fa-location-dot"></i>
+					<p>Magelang, Jawa Tengah</p>
+				</div>
+				<br />
+				<div class="star-icon">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+				</div>
+				<div class="text-box-2">
+				<p>Mulai dari</p>
+				<h4>Rp 7.300.000,00</h4>
+				<p>1 malam, 2 dewasa</p>
+				</div>
+			</div>
+			<div class="text-info">
+				<p>
+				Amanjiwo, yang berarti 'Jiwa Tenang', situs Warisan Dunia UNESCO.
+				Resor ini menawarkan akses istimewa untuk menjelajahi atraksi
+				sejarah dan alam, serta suasana tenang di tengah keindahan
+				sekitarnya.
+				</p>
+			</div>
+
+			<div class="box-button">
+				<button class="butt">Book Now</button>
+			</div>
+			</div>
+
+			<div class="box-1">
+			<img src="resort-9.png" />
+			<h4 class="judul">The Lombok Lodge</h4>
+			<div class="semua">
+				<div class="all-text-box">
+				<div class="text-box">
+					<i class="fa-solid fa-location-dot"></i>
+					<p>Nongsa, Riau</p>
+				</div>
+				<br />
+				<div class="star-icon">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+				</div>
+				</div>
+				<div class="text-box-2">
+				<p>Mulai dari</p>
+				<h4>Rp 7.599.999,00</h4>
+				<p>1 malam, 2 dewasa</p>
+				</div>
+			</div>
+			<div class="text-info">
+				<p>
+				The Lombok Lodge adalah resor romantis di Lombok Utara yang
+				dikelilingi pemandangan laut dan pegunungan indah. Resor ini
+				menawarkan 8 vila pribadi dengan fasilitas mewah.
+				</p>
+			</div>
+
+			<div class="box-button">
+				<button class="butt">Book Now</button>
+			</div>
+			</div>
+      	</div>
+    </div>
+	<div class="footer">
+        <div class="row-footer">
+            <div class="infoma">
+                <h3>Contact Us</h3>
+                <ul class="conta">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Jl. Gereja Theresia No. 4 <br>Rt./Rw. 008/004, Jakarta Pusat </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>Call +62 8976554329</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>WanderWiz@gmail.com</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="bot-nav">
+                <div class="infoma">
+                    <h3>Menu</h3>
+                    <ul class="fullink">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#Discover">Discover</a></li>
+                        <li><a href="#Tours">Tours</a></li>
+                        <li><a href="#News">News</a></li>
+                        <li><a href="#About">About</a></li>
+                    </ul>
+                </div>
+                <div class="infoma text_align_left">
+                    <ul class="social_icon">
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="infoma">
+                <h3>Newsletter</h3>
+                <div class="row-infoma">
+                    <input class="newsl" placeholder="Enter your email" type="text" name="Enter your email">
+                    <input type="submit" class="subsci_btn" value="Subscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p>© 2024 All Rights Reserved. Design by WanderWiz</p>
+    </div>
+  </body>
+  <style>
+	
+    .slider {
+        position: relative;
+        width: 100%;
+        /* Set the width of your slider */
+        min-height: 50dvh;
+        padding: 0 15rem;
+        box-sizing: border-box;
+        animation: slider2 10s infinite forwards 5s;
+
+        .bg {
+            width: 100%;
+            /* Set the width of your slider */
+            aspect-ratio: 16/9;
+            background: url(imgResort/ner.png);
+            background-size: cover;
+            background-position: center;
+            animation: slider 10s infinite forwards 5s;
+        }
+    }
+	@keyframes slider {
+		0% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		10% {
+			background: url(imgResort/ner-2.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		50% {
+			background: url(imgResort/ner-2.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		90% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		100% {
+			background: url(imgResort/ner.png);
+			background-size: cover;
+			background-position: center;
+		}
+	}
+
+	@keyframes slider2 {
+		0% {
+			background-color: white;
+		}
+
+		10% {
+			background-color: #261C19;
+		}
+
+		50% {
+			background-color: #261C19;
+		}
+
+		90% {
+			background-color: white;
+		}
+
+		100% {
+			background-color: white;
+		}
+	}
+  </style>
+</html>

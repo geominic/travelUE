@@ -96,26 +96,6 @@
         width: 100%;
     }
 
-    .slider {
-        position: relative;
-        width: 100%;
-        /* Set the width of your slider */
-        min-height: 50dvh;
-        padding: 0 15rem;
-        box-sizing: border-box;
-        animation: slider2 10s infinite forwards 5s;
-
-        .bg {
-            width: 100%;
-            /* Set the width of your slider */
-            aspect-ratio: 16/9;
-            background: url(imgResort/ner.png);
-            background-size: cover;
-            background-position: center;
-            animation: slider 10s infinite forwards 5s;
-        }
-    }
-
     .closeNavbar {
         width: 24%;
         overflow: hidden;
@@ -421,61 +401,5 @@
         padding: 2rem 0;
         font-weight: 400;
         font-weight: normal;
-    }
-}
-
-/* nyoba slider */
-
-@keyframes slider {
-    0% {
-        background: url(imgResort/ner.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-    10% {
-        background: url(imgResort/ner-2.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-    50% {
-        background: url(imgResort/ner-2.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-    90% {
-        background: url(imgResort/ner.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-    100% {
-        background: url(imgResort/ner.png);
-        background-size: cover;
-        background-position: center;
-    }
-}
-
-@keyframes slider2 {
-    0% {
-        background-color: white;
-    }
-
-    10% {
-        background-color: #261C19;
-    }
-
-    50% {
-        background-color: #261C19;
-    }
-
-    90% {
-        background-color: white;
-    }
-
-    100% {
-        background-color: white;
     }
 }
