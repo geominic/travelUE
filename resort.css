@@ -103,7 +103,7 @@
     }
 
     .closeNavbar {
-        width: 24%;
+        width: 27%;
         overflow: hidden;
         border-bottom-right-radius: var(--border1);
     }
